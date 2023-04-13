@@ -1,0 +1,176 @@
+/**********************************
+   DEFAULT DESIGN - Mobile Screen
+***********************************/
+
+body {
+    font-family: 'News Cycle', sans-serif;
+}
+
+/* Bootstrap Custom Properties */
+:root {
+    /* Colors */
+    --primary-color: #095351;
+    --secondary-color: #F36E21;
+    --light-color: #F19F1F;
+
+    /* Fonts */
+    
+  }
+
+
+
+/* customize the size of the logo for mobile screen */
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+}
+
+
+/* HAMBURGER MENU */
+
+.navbar .navbar-toggler {
+    border: none;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler:focus {
+    border: 1px solid var(--primary-color);
+}
+
+/* rotate first span */
+.navbar .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+ 
+.navbar .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
+.navbar .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: var(--primary-color);
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+/* Menu Items */
+.navbar-collapse .navbar-nav .nav-item {
+    margin: 0 auto;
+    font-family: 'El Messiri', sans-serif;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+#current-page {
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+/* The menu item linked to the current page is styled differently to let users know where they are. */
+
+/* Self=introduction */
+h1 {
+    font-family: 'El Messiri', sans-serif;
+    font-size: 40px;
+    color: var(--primary-color);
+}
+
+.heading p {
+    /* font-family: 'El Messiri', sans-serif; */
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.line {
+    width: 70%;
+    height: 1.5px;
+    background-color: var(--secondary-color);
+}
+
+
+
+/**********************************
+           Medium Screen
+***********************************/
+@media only screen and (min-width: 768px) {
+
+    /* Menu */
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 25px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        color: var(--light-color);
+    }
+    /* change the color of the menu item when hovered */
+
+    .line {
+        width: 55%;
+    }
+
+    /* Self-intro */
+    h1 {
+        font-size: 50px;
+    }
+    
+    .heading p {
+        font-size: 22.5px;
+    }
+}
+
+
+
+
+
+
+/**********************************
+           Large Screen
+***********************************/
+@media only screen and (min-width: 992px) {
+    .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 28px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav > li:not(:last-child) {
+        padding-right: 30px;
+    }
+    /* add some space between the menu item, but not to the left side of the ul. */
+
+    .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+        color: var(--light-color);
+        transform: translateY(-5px);
+    }
+    /* change the color of the menu item and move it up by 5px when hovered to create a nice interaction */
+
+
+    /* Self-intro */
+    h1 {
+        font-size: 60px;
+    }
+    
+    .heading p {
+        font-size: 30px;
+    }
+
+}
