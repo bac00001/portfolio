@@ -30,15 +30,15 @@
 
     /* body */
     --font-size-p: 17px;
-  }
+}
 
-  body {
+body {
     font-family: var(--secondary-font);
     color: var(--primary-color);
     width: 100%;
     overflow-x: hidden;
     /* add overflow-x: hidden; to prevent horizontally scrolling */
-  }
+}
 
 
 
@@ -67,17 +67,17 @@
 .navbar .navbar-toggler[aria-expanded="true"] span:first-of-type {
     transform: rotate(45deg) translate(6px, 6px);
 }
- 
+
 /* hide second span */
 .navbar .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
     opacity: 0;
 }
- 
+
 /* rotate third span */
 .navbar .navbar-toggler[aria-expanded="true"] span:last-of-type {
     transform: rotate(-45deg) translate(5px, -5px);
 }
- 
+
 .navbar .navbar-toggler[aria-expanded="false"] span {
     transform: none;
     opacity: 1;
@@ -101,6 +101,7 @@
 .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
     color: var(--light-color);
 }
+
 /* change the color of the menu item when hovered */
 
 
@@ -120,6 +121,7 @@
     text-decoration: underline;
     text-underline-offset: 10px;
 }
+
 /* The menu item linked to the current page is styled differently to let users know where they are. */
 
 /* SELF-INTRO */
@@ -212,10 +214,13 @@ p {
     justify-content: center;
     align-items: center;
 }
-  
+
 .back-to-top i {
     color: var(--secondary-color);
     font-size: var(--font-size-h3);
+    position: relative;
+    top: 5px;
+    left: -2px;
 }
 
 /* add hover and focus effect */
@@ -239,11 +244,13 @@ footer {
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
+
 /* add transition for hover effect on medium and large screens */
 
 .fa-brands:hover {
     color: var(--light-color);
 }
+
 .fa-brands:active {
     transform: scale(0.7);
 }
@@ -262,34 +269,36 @@ footer {
     /* background-color: aliceblue; */
 }
 
+.divA {
+    /* background-color: antiquewhite; */
+}
+
 .div2 {
     position: absolute;
     top: 10px;
     left: 0;
     z-index: 0;
     /* background-color: #095351; */
-    width: 200px;
-    height: 200px;
-    rotate: -5deg;
+    background: linear-gradient(180deg, rgba(9,83,81,1) 0%, rgba(243,110,33,1) 63%, rgba(240,135,33,1) 81%, rgba(241,159,31,1) 89%, rgba(253,228,119,1) 100%);
+    width: 274px;
+    height: 320px;
+    rotate: -4deg;
 }
 
 .div1 {
     position: relative;
     z-index: 1;
-    margin-top: 10px;
-    margin-left: 10px;
-    /* background-color: beige; */
-    width: 200px;
-    height: 200px;
-    rotate: -5deg;
-}
-.div-one {
     margin-top: 30px;
+    margin-left: 25px;
+    background-color: beige;
+    width: 274px;
+    height: 320px;
+    rotate: -4deg;
 }
 
 
 .about {
-    height: 200px;
+    height: 580px;
 }
 
 /* ------CONTACT PAGE------ */
@@ -315,10 +324,12 @@ footer {
 .form-group label {
     font-size: var(--font-size-p);
 }
+
 .form-group input,
 .form-group textarea {
     border: 1px solid var(--grey);
 }
+
 /**********************************
            Medium Screen
 ***********************************/
@@ -328,10 +339,10 @@ footer {
     :root {
         /* Dalin Bac Heading */
         --font-size-h1: 50px;
-    
+
         /* UX Designer subheading */
         --font-size-h2: 22.5px;
-    
+
         /* section title */
         --font-size-h3: 35px;
 
@@ -342,7 +353,7 @@ footer {
         --font-size-p: 18px;
     }
 
-    
+
 
     .line {
         width: 55%;
@@ -352,7 +363,7 @@ footer {
     h1 {
         font-size: var(--font-size-h1)
     }
-    
+
     .heading h2 {
         font-size: var(--font-size-h2)
     }
@@ -369,7 +380,7 @@ footer {
         margin-bottom: 15px;
         /* margin-bottom is used instead of bootstrap's mb- to minimize code */
     }
-    
+
     .work-card .card p {
         color: var(--primary-color);
         font-size: var(--font-size-p);
@@ -382,7 +393,7 @@ footer {
     /* hide the back to top button on medium and large screen as we don't need them. */
     .back-to-top,
     .back-to-top i {
-        display: none;
+        display: none !important;
     }
 
     /* FOOTER */
@@ -391,11 +402,28 @@ footer {
         font-size: var(--font-size-h1);
         top: 12px;
     }
-    
+
     .link-icon {
         margin-top: 25px;
     }
 
+    /* ------ABOUT PAGE------ */
+
+    /* IMAGE ON TOP OF DIV */
+
+    .div2 {
+        width: 287px;
+        height: 335px;
+    }
+
+    .div1 {
+        width: 287px;
+        height: 335px;
+    }
+
+    .about {
+        height: 400px;
+    }
 
 }
 
@@ -413,10 +441,10 @@ footer {
     :root {
         /* Dalin Bac Heading */
         --font-size-h1: 60px;
-    
+
         /* UX Designer subheading */
         --font-size-h2: 25px;
-    
+
         /* section title */
         --font-size-h3: 45px;
 
@@ -432,15 +460,17 @@ footer {
         transition: all 0.3s ease-in-out;
     }
 
-    .navbar-nav > li:not(:last-child) {
+    .navbar-nav>li:not(:last-child) {
         padding-right: 30px;
     }
+
     /* add some space between the menu item, but not to the left side of the ul. */
 
     .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
         color: var(--light-color);
         transform: translateY(-5px);
     }
+
     /* change the color of the menu item and move it up by 5px when hovered to create a nice interaction */
 
 
@@ -448,7 +478,7 @@ footer {
     h1 {
         font-size: var(--font-size-h1)
     }
-    
+
     .heading h2 {
         font-size: var(--font-size-h2)
     }
@@ -465,7 +495,7 @@ footer {
         margin-bottom: 15px;
         /* margin-bottom is used instead of bootstrap's mb- to minimize code */
     }
-    
+
     .work-card .card p {
         color: var(--primary-color);
         font-size: var(--font-size-p);
@@ -492,7 +522,26 @@ footer {
         margin-top: 20px;
     }
 
+    /* ------ABOUT PAGE------ */
 
-    
+    /* IMAGE ON TOP OF DIV */
+
+    .div2 {
+        width: 300px;
+        height: 350px;
+    }
+
+    .div1 {
+        width: 300px;
+        height: 350px;
+    }
+
+
+    .about {
+        height: 400px;
+    }
+
+
+
 
 }

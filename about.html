@@ -70,9 +70,9 @@
     <main role="main">
 
         <!-- create a grid for the content and image on medium and large screen -->
-        <div class="container">
-            <div class="row mx-4 about">
-                <div class="col-md-6 col-lg-6 pt-4 divA">
+        <div class="mx-md-5 px-xl-5">
+            <div class="row mx-4 mx-md-0 mx-lg-5 about">
+                <div class="col-md-6 col-lg-6 pt-4 mt-lg-5 pt-lg-3 pt-xl-5 divA">
                     <h2 class="section-header">About Me</h2>
                     <p>My name is Dalin Bac: a User Experience Designer based in Ottawa, Canada. I'm a lifelong learner
                         who is enthusiastic about any new opportunities that arise in my life. Challenges are adventures
@@ -80,28 +80,46 @@
                 </div>
 
                 <!-- image on top of div -->
-                <div class="col-md-6 col-lg-6 divB">
-                    <div class="div1 div-one"></div>
-                    <div class="div2"></div>
+                <div class="col-md-6 col-lg-6 pt-md-4 d-flex justify-content-center">
+                    <div class="divB">
+                        <div class="div1">
+                            <picture>
+                                <source srcset="images/portrait-274_x_320.jpg" media="(max-width: 768px)">
+                                <source srcset="images/portrait-287_x_335.jpg" media="(max-width: 992px)">
+                                <source srcset="images/portrait-300_x_350.jpg" media="(min-width: 992px)">
+                                <img src="images/portrait.jpg" alt="Portrait of Dalin Bac looking up, symbolizing the eagerness to grow.">
+                            </picture>
+                        </div>
+                        <div class="div2"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container mt-5">
-            <div class="row mx-4 vision">
+        <div class="mx-md-5 px-xl-5">
+            <div class="row mx-4 mx-md-0 mx-lg-5 vision">
 
                 <!-- image on top of div -->
-                <div class="col-md-6 col-lg-6 pt-4 divB">
-                    <div class="div1"></div>
-                    <div class="div2"></div>
-                </div>
-
-                <div class="col-md-6 col-lg-6 pt-4 divA">
+                <div class="col-md-6 col-lg-6 pt-4 order-md-2 order-lg-2 mt-lg-5 pt-lg-3 pt-xl-5 divA">
                     <h2 class="section-header">My Vision and Mission</h2>
                     <p>My mission is to contribute to the creation of accessible design and spread awareness on how
                         important accessibility is in the design process.</p>
                     <p>My vision is to become a renown User Experience Designer who specialize in accessibility and
                         create user centred design that is inclusive and innovative.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-6 pt-4 d-flex justify-content-center">
+                    <div class="divB">
+                        <div class="div1">
+                            <picture>
+                                <source srcset="images/sunrise-274_x_320.jpg" media="(max-width: 768px)">
+                                <source srcset="images/sunrise-287_x_335.jpg" media="(max-width: 992px)">
+                                <source srcset="images/sunrise-300_x_350.jpg" media="(min-width: 992px)">
+                                <img src="images/sunrise.jpg" alt="Beautiful sunrise, symbolizing new beginning and opportunities.">
+                            </picture>
+                        </div>
+                        <div class="div2"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -116,11 +134,14 @@
             <p>Feel free to reach out for collaboration or just a friendly chat.</p>
             <p>bacdalin@gmail.com</p>
             <div class="d-flex justify-content-center link-icon">
-                <a href="https://www.linkedin.com/in/dalin-bac/" target="_blank"><i class="fa-brands fa-linkedin mx-3" role="button" aria-label="LinkedIn"></i></a>
-                <a href="https://github.com/bac00001" target="_blank"><i class="fa-brands fa-square-github mx-3" role="button" aria-label="GitHub"></i></a>
-                
+                <a href="https://www.linkedin.com/in/dalin-bac/" target="_blank"><i class="fa-brands fa-linkedin mx-3"
+                        role="button" aria-label="LinkedIn"></i></a>
+                <a href="https://github.com/bac00001" target="_blank"><i class="fa-brands fa-square-github mx-3"
+                        role="button" aria-label="GitHub"></i></a>
+
                 <!-- Behance link is directed to behance.com since I haven't created my own account yet -->
-                <a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-square-behance mx-3" role="button" aria-label="Behance"></i></a>
+                <a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-square-behance mx-3"
+                        role="button" aria-label="Behance"></i></a>
                 <!-- use target="_blank" to open the link in a new tab when the icons are clicked -->
             </div>
             <p role="contentinfo"><span class="copyright">&copy;</span> 2023 Dalin Bac</p>
