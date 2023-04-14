@@ -67,30 +67,30 @@
 
     <main role="main">
 
-        <div class="row" itemscope itemtype="https://schema.org/Person">
-            <div class="col-md-6 col-lg-6">
+        <div class="row justify-content-center contact" itemscope itemtype="https://schema.org/Person">
+            <div class="col-md-5 col-lg-4 px-5 ps-md-5 pe-md-4  ps-lg-0 pe-lg-5 pt-4 contact-one">
                 <h2 class="section-header">Contact Me</h2>
                 <p>Have a cool project in which you would me to collaborate with you? Or do you have any unique and impactful design that you want to share?
                 </p>
                 <p>Send me a message; let's start the conversation!</p>
             </div>
 
-            <div class="col-md-6 col-lg-6 divB">
+            <div class="col-md-5 col-lg-4 px-5 ps-md-4 pe-md-5 pt-md-3 ps-lg-5 pe-lg-0 pt-4 contact-two">
                 <form itemscope itemtype="https://schema.org/ContactPoint">
                     <div class="form-group">
                       <label for="name">Your Name</label>
                       <input type="text" class="form-control" id="name" name="name" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group pt-4">
                       <label for="email">Your Email</label>
                       <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group pt-4">
                       <label for="message">Your Message</label>
                       <textarea class="form-control" id="message" name="message" required></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary mt-4 w-auto px-4" id="send-btn">Send</button>
 
                     <meta itemprop="email" content="bacdalin@gmail.com">
                   </form>
@@ -98,33 +98,24 @@
 
             <meta itemprop="name" content="Dalin Bac">
             <meta itemprop="jobTitle" content="Use Experience Designer">
+            <meta itemprop="url" content="https://bac00001.github.io/portfolio/home">
 
-
-
-
-
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-            <meta itemprop="url" content="https://www.yoursite.com">
-            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-
-
-
-
-
-            
         </div>
     </main>
 
 
-    <footer class="text-center">
+    <footer class="text-center mt-5 fixed-bottom">
         <div class="row py-4 footer">
             <p>Let's Connect!</p>
             <p>Feel free to reach out for collaboration or just a friendly chat.</p>
             <p>bacdalin@gmail.com</p>
             <div class="d-flex justify-content-center link-icon">
-              <a href="#"><i class="fa-brands fa-linkedin mx-3" role="button" aria-label="LinkedIn"></i></a>
-              <a href="#"><i class="fa-brands fa-square-github mx-3" role="button" aria-label="GitHub"></i></a>
-              <a href="#"><i class="fa-brands fa-square-behance mx-3" role="button" aria-label="Behance"></i></a>
+                <a href="https://www.linkedin.com/in/dalin-bac/" target="_blank"><i class="fa-brands fa-linkedin mx-3" role="button" aria-label="LinkedIn"></i></a>
+                <a href="https://github.com/bac00001" target="_blank"><i class="fa-brands fa-square-github mx-3" role="button" aria-label="GitHub"></i></a>
+                
+                <!-- Behance link is directed to behance.com since I haven't created my own account yet -->
+                <a href="https://www.behance.net/" target="_blank"><i class="fa-brands fa-square-behance mx-3" role="button" aria-label="Behance"></i></a>
+                <!-- use target="_blank" to open the link in a new tab when the icons are clicked -->
             </div>
             <p role="contentinfo"><span class="copyright">&copy;</span> 2023 Dalin Bac</p>
         </div>
